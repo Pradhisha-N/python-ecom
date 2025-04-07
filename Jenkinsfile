@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/Pradhisha-N/python-ecom.git'
+                git url:'https://github.com/Pradhisha-N/python-ecom.git',branch:'main'
             }
         }
         stage('Build Docker Image') {
