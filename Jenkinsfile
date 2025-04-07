@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t your-dockerhub-username/python-webapp:latest .'
+                sh 'docker build -t pradhisha/python-webapp:latest .'
             }
         }
         stage('Push to DockerHub') {
